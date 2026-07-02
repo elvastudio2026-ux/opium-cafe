@@ -1,15 +1,13 @@
 import { motion } from 'motion/react';
-import ImageWithFallback from './ImageWithFallback';
 import opiumSignImage from '../assets/images/opium_sign_glow_1782933190884.webp';
 import coffeeDessertImage from '../assets/images/coffee_dessert_cocktail_1783020499422.webp';
 import steakPlateImage from '../assets/images/steak_plate_1783020521680.webp';
-import nightGardenImage from '../assets/images/night_garden_stairs_1782933395825.webp';
 
 const images = [
   opiumSignImage,
   coffeeDessertImage,
   steakPlateImage,
-  nightGardenImage
+  "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?q=80&w=1964&auto=format&fit=crop"
 ];
 
 export default function Gallery() {
@@ -46,7 +44,7 @@ export default function Gallery() {
               viewport={{ once: true }}
               className="overflow-hidden"
             >
-              <ImageWithFallback 
+              <img 
                 src={images[0]} 
                 alt="Intérieur Lounge" 
                 className="w-full h-[60vh] object-cover hover:scale-[1.02] transition-transform duration-700" 
@@ -58,7 +56,7 @@ export default function Gallery() {
               viewport={{ once: true }}
               className="overflow-hidden"
             >
-              <ImageWithFallback 
+              <img 
                 src={images[1]} 
                 alt="Plat d'exception" 
                 className="w-full h-[40vh] object-cover hover:scale-[1.02] transition-transform duration-700" 
@@ -72,7 +70,7 @@ export default function Gallery() {
               viewport={{ once: true }}
               className="overflow-hidden"
             >
-              <ImageWithFallback 
+              <img 
                 src={images[2]} 
                 alt="Détails Culinaires" 
                 className="w-full h-[40vh] object-cover hover:scale-[1.02] transition-transform duration-700" 
@@ -84,7 +82,7 @@ export default function Gallery() {
               viewport={{ once: true }}
               className="overflow-hidden"
             >
-              <ImageWithFallback 
+              <img 
                 src={images[3]} 
                 alt="Ambiance Table" 
                 className="w-full h-[60vh] object-cover hover:scale-[1.02] transition-transform duration-700" 

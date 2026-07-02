@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import ImageWithFallback from './ImageWithFallback';
 
 export default function About() {
   return (
@@ -13,8 +12,8 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative aspect-[3/4] w-full max-w-md mx-auto"
           >
-            <ImageWithFallback 
-              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1600&auto=format&fit=crop&fm=webp" 
+            <img 
+              src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFXdAAB0GqYDwUUBN3wki-fPycfQLQR1bhC2yvjVUd3kmzdur8Cwd314zsJcgjEnO7ikedUG8Od4I7AZuuMl5l_-1xfIFSzD25fc0-l7FJF9F6-6BbjjFuCqIhX3UtOC9fTK1gD2ViAR4Mi=w1200-h1600-k-no" 
               alt="Intérieur chaleureux Opium Café" 
               className="w-full h-full object-cover shadow-2xl"
             />

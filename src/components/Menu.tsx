@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import ImageWithFallback from './ImageWithFallback';
 import tiramisuImage from '../assets/images/tiramisu_dessert_1782931976534.webp';
 import pizzaMargheritaImage from '../assets/images/pizza_margherita_1782932238839.webp';
 
@@ -107,7 +106,7 @@ export default function Menu() {
                 className="group cursor-pointer hover:scale-105 transition-transform duration-500 ease-out"
               >
                 <div className="overflow-hidden mb-6 relative aspect-[4/3] bg-gray-100 p-4 shadow-sm border border-gray-200/50 rounded-sm">
-                  <ImageWithFallback 
+                  <img 
                     src={item.image} 
                     alt={item.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
