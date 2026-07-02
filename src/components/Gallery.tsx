@@ -1,9 +1,8 @@
 import { motion } from 'motion/react';
-import ImageWithFallback from './ImageWithFallback';
-import opiumSignImage from '../assets/images/opium_sign_glow_1782933190884.webp';
-import coffeeDessertImage from '../assets/images/coffee_dessert_cocktail_1783020499422.webp';
-import steakPlateImage from '../assets/images/steak_plate_1783020521680.webp';
-import nightGardenImage from '../assets/images/night_garden_stairs_1782933395825.webp';
+import opiumSignImage from '../assets/images/opium_sign_glow_1783026905871.jpg';
+import coffeeDessertImage from '../assets/images/coffee_dessert_cocktail_1783026944193.jpg';
+import steakPlateImage from '../assets/images/steak_plate_1783026956634.jpg';
+import nightGardenImage from '../assets/images/night_garden_stairs_1783026966985.jpg';
 
 const images = [
   opiumSignImage,
@@ -46,7 +45,7 @@ export default function Gallery() {
               viewport={{ once: true }}
               className="overflow-hidden"
             >
-              <ImageWithFallback 
+              <img 
                 src={images[0]} 
                 alt="Intérieur Lounge" 
                 className="w-full h-[60vh] object-cover hover:scale-[1.02] transition-transform duration-700" 
@@ -58,13 +57,14 @@ export default function Gallery() {
               viewport={{ once: true }}
               className="overflow-hidden"
             >
-              <ImageWithFallback 
+              <img 
                 src={images[1]} 
                 alt="Plat d'exception" 
                 className="w-full h-[40vh] object-cover hover:scale-[1.02] transition-transform duration-700" 
               />
             </motion.div>
           </div>
+          
           <div className="space-y-6 md:mt-24">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ export default function Gallery() {
               viewport={{ once: true }}
               className="overflow-hidden"
             >
-              <ImageWithFallback 
+              <img 
                 src={images[2]} 
                 alt="Détails Culinaires" 
                 className="w-full h-[40vh] object-cover hover:scale-[1.02] transition-transform duration-700" 
@@ -84,7 +84,7 @@ export default function Gallery() {
               viewport={{ once: true }}
               className="overflow-hidden"
             >
-              <ImageWithFallback 
+              <img 
                 src={images[3]} 
                 alt="Ambiance Table" 
                 className="w-full h-[60vh] object-cover hover:scale-[1.02] transition-transform duration-700" 

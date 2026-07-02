@@ -1,6 +1,5 @@
-import ImageWithFallback from './ImageWithFallback';
 import { motion } from 'motion/react';
-import aboutInterior from '../assets/images/about_interior.jpg';
+import aboutInteriorImage from '../assets/images/about_interior_1783027689815.jpg';
 
 export default function About() {
   return (
@@ -14,8 +13,8 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative aspect-[3/4] w-full max-w-md mx-auto"
           >
-            <ImageWithFallback 
-              src={aboutInterior}
+            <img 
+              src={aboutInteriorImage} 
               alt="Intérieur chaleureux Opium Café" 
               className="w-full h-full object-cover shadow-2xl"
             />

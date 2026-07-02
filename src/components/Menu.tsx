@@ -1,23 +1,26 @@
-import ImageWithFallback from './ImageWithFallback';
 import { motion } from 'motion/react';
-import tiramisuImage from '../assets/images/tiramisu_dessert_1782931976534.webp';
-import pizzaMargheritaImage from '../assets/images/pizza_margherita_1782932238839.webp';
+import tiramisuImage from '../assets/images/tiramisu_dessert_1783026917978.jpg';
+import pizzaMargheritaImage from '../assets/images/pizza_margherita_1783026932037.jpg';
+import saladeCesarImage from '../assets/images/salade_cesar_1783027643315.jpg';
+import pestoStracciatellaImage from '../assets/images/pesto_stracciatella_1783027654697.jpg';
+import raviolisTruffeImage from '../assets/images/raviolis_truffe_1783027665970.jpg';
+import pizzaArtisanaleImage from '../assets/images/pizza_artisanale_1783027677085.jpg';
 
 const menuItems = [
   {
     name: "Salade César",
     desc: "Laitue romaine, poulet grillé, croûtons, parmesan, sauce maison",
-    image: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=2070&auto=format&fit=crop&fm=webp"
+    image: saladeCesarImage
   },
   {
     name: "Pesto Stracciatella",
     desc: "Pâtes fraîches, pesto basilic, cœur de burrata, pignons de pin",
-    image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2070&auto=format&fit=crop&fm=webp"
+    image: pestoStracciatellaImage
   },
   {
     name: "Raviolis Truffe",
     desc: "Raviolis maison farcis à la ricotta et crème de truffe noire",
-    image: "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=2069&auto=format&fit=crop&fm=webp"
+    image: raviolisTruffeImage
   },
   {
     name: "Pizza Margherita",
@@ -27,7 +30,7 @@ const menuItems = [
   {
     name: "Pizza Artisanale",
     desc: "Pâte maturée 48h, sauce tomate San Marzano, mozzarella fior di latte",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&fm=webp"
+    image: pizzaArtisanaleImage
   },
   {
     name: "Tiramisu Maison",
@@ -69,7 +72,7 @@ export default function Menu() {
                     de l'Opium Lounge
                 </motion.p>
             </div>
-
+            
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +110,7 @@ export default function Menu() {
                 className="group cursor-pointer hover:scale-105 transition-transform duration-500 ease-out"
               >
                 <div className="overflow-hidden mb-6 relative aspect-[4/3] bg-gray-100 p-4 shadow-sm border border-gray-200/50 rounded-sm">
-                  <ImageWithFallback 
+                  <img 
                     src={item.image} 
                     alt={item.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

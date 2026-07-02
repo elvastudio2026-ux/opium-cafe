@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import fallbackImage from '../assets/images/about_interior_1783027689815.jpg';
 
 interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   fallbackSrc?: string;
@@ -6,7 +7,7 @@ interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 
 export default function ImageWithFallback({ 
   src, 
-  fallbackSrc = 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80&fm=webp', // Image par défaut du restaurant (bouteille/bar)
+  fallbackSrc = fallbackImage, // Image par défaut du restaurant
   alt, 
   className,
   ...props
