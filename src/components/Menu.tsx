@@ -1,22 +1,23 @@
 import { motion } from 'motion/react';
-import tiramisuImage from '../assets/images/tiramisu_dessert_1782931976534.jpg';
-import pizzaMargheritaImage from '../assets/images/pizza_margherita_1782932238839.jpg';
+import ImageWithFallback from './ImageWithFallback';
+import tiramisuImage from '../assets/images/tiramisu_dessert_1782931976534.webp';
+import pizzaMargheritaImage from '../assets/images/pizza_margherita_1782932238839.webp';
 
 const menuItems = [
   {
     name: "Salade César",
     desc: "Laitue romaine, poulet grillé, croûtons, parmesan, sauce maison",
-    image: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=2070&auto=format&fit=crop&fm=webp"
   },
   {
     name: "Pesto Stracciatella",
     desc: "Pâtes fraîches, pesto basilic, cœur de burrata, pignons de pin",
-    image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2070&auto=format&fit=crop&fm=webp"
   },
   {
     name: "Raviolis Truffe",
     desc: "Raviolis maison farcis à la ricotta et crème de truffe noire",
-    image: "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=2069&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=2069&auto=format&fit=crop&fm=webp"
   },
   {
     name: "Pizza Margherita",
@@ -26,7 +27,7 @@ const menuItems = [
   {
     name: "Pizza Artisanale",
     desc: "Pâte maturée 48h, sauce tomate San Marzano, mozzarella fior di latte",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&fm=webp"
   },
   {
     name: "Tiramisu Maison",
@@ -106,11 +107,10 @@ export default function Menu() {
                 className="group cursor-pointer hover:scale-105 transition-transform duration-500 ease-out"
               >
                 <div className="overflow-hidden mb-6 relative aspect-[4/3] bg-gray-100 p-4 shadow-sm border border-gray-200/50 rounded-sm">
-                  <img 
+                  <ImageWithFallback 
                     src={item.image} 
                     alt={item.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
                   />
                 </div>
                 <h3 className="text-2xl font-serif mb-2 text-[#111] font-bold">{item.name}</h3>
