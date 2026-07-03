@@ -1,14 +1,12 @@
 import { motion } from 'motion/react';
-import opiumSignImage from '../assets/images/opium_sign_glow_1783026905871.jpg';
 import coffeeDessertImage from '../assets/images/coffee_dessert_cocktail_1783026944193.jpg';
 import steakPlateImage from '../assets/images/steak_plate_1783026956634.jpg';
-import nightGardenImage from '../assets/images/night_garden_stairs_1783026966985.jpg';
 
 const images = [
-  opiumSignImage,
+  "https://res.cloudinary.com/dyw9qoe1j/image/upload/f_auto,q_auto/v1781441595/Photo1_reolbe.jpg",
   coffeeDessertImage,
   steakPlateImage,
-  nightGardenImage
+  "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEmVPiXl8MGAPA60HsUrVYWkGAJDBM1ST-DPXpYcElNjTqWZyQEguW2GSKYjib6HBFnoY4dMgSJS_PlvcFdZzHiTypPLie-XZAfA98YwWu0OQ8JFRLOa1Eg62a6ULJym5FdY8MuIX3yroN3=w408-h725-k-no"
 ];
 
 export default function Gallery() {
@@ -48,7 +46,8 @@ export default function Gallery() {
               <img 
                 src={images[0]} 
                 alt="Intérieur Lounge" 
-                className="w-full h-[60vh] object-cover hover:scale-[1.02] transition-transform duration-700" 
+                loading="lazy"
+                className="w-full h-[60vh] object-cover hover:scale-[1.05] transition-transform duration-700 ease-in-out" 
               />
             </motion.div>
             <motion.div
@@ -87,7 +86,8 @@ export default function Gallery() {
               <img 
                 src={images[3]} 
                 alt="Ambiance Table" 
-                className="w-full h-[60vh] object-cover hover:scale-[1.02] transition-transform duration-700" 
+                loading="lazy"
+                className="w-full h-[60vh] object-cover hover:scale-[1.05] transition-transform duration-700 ease-in-out" 
               />
             </motion.div>
           </div>

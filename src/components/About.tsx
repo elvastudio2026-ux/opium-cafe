@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import aboutInteriorImage from '../assets/images/about_interior_1783027689815.jpg';
 
 export default function About() {
   return (
@@ -14,9 +13,10 @@ export default function About() {
             className="relative aspect-[3/4] w-full max-w-md mx-auto"
           >
             <img 
-              src={aboutInteriorImage} 
+              src="https://res.cloudinary.com/dyw9qoe1j/image/upload/v1781443668/Screenshot_20260614_141201_Maps_h8xd5w.jpg" 
               alt="Intérieur chaleureux Opium Café" 
               className="w-full h-full object-cover shadow-2xl"
+              loading="lazy"
             />
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gray-200 dark:bg-gray-900 -z-10"></div>
           </motion.div>
